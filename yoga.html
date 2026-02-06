@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerHeal| Yoga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="yoga-theme">
+
+    <main class="studio-container">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section class="growth-sanctuary glass">
+            <div id="plant-pot" class="pot-container">
+                <div class="plant-stage" id="plant-visual">
+                    <span class="seed-icon">🌱</span>
+                </div>
+            </div>
+            <div class="growth-info">
+                <h3 id="growth-status">Time to Grow</h3>
+                <p id="growth-message">Sprout your Lotus through mindful flow.</p>
+            </div>
+        </section>
+
+        <section class="exercise-list">
+            <div class="exercise-card pcos-special">
+                <div class="card-image">
+                    <img src="butterfly.jpeg" alt="butterfly">
+                </div>
+                <div class="exercise-info">
+                    <div class="badge">Yoga • Pelvic Health </div>
+                    <h4>Butterfly Pose</h4>
+                    <p class="pcos-insight"><strong>Why:</strong>Boosts blood flow to ovaries to help regulate cycles.</p>
+                </div>
+                <div class="timer-box"><span class="timer-display-small" id="time-y1">00:00</span>
+                    <div class="button-group">
+                        <button class="btn-start-timer" onclick="toggleTimer('y1')">Start</button>
+                        <button class="btn-end-timer" onclick="endSession('y1')">End</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercise-card pcos-special">
+                <div class="card-image">
+                    <img src="child.jpeg" alt="child-pose">
+                </div>
+                <div class="exercise-info">
+                    <div class="badge">Yoga • Cortisol Reduction </div>
+                    <h4>Child's Pose</h4>
+                    <p class="pcos-insight"><strong>Why:</strong>Calms the nervous system to lower high cortisol (stress).</p>
+                </div>
+                <div class="timer-box"><span class="timer-display-small" id="time-y2">00:00</span>
+                    <div class="button-group">
+                        <button class="btn-start-timer" onclick="toggleTimer('y2')">Start</button>
+                        <button class="btn-end-timer" onclick="endSession('y2')">End</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercise-card pcos-special">
+                <div class="card-image">
+                    <img src="Cobra Pose (Bhujangasana).jpeg" alt="cobra">
+                </div>
+                <div class="exercise-info">
+                    <div class="badge">Yoga • Pelvic Health </div>
+                    <h4>Cobra Pose</h4>
+                    <p class="pcos-insight"><strong>Why:</strong>Massages the adrenal glands to help balance hormones.</p>
+                </div>
+                <div class="timer-box"><span class="timer-display-small" id="time-y3">00:00</span>
+                    <div class="button-group">
+                        <button class="btn-start-timer" onclick="toggleTimer('y3')">Start</button>
+                        <button class="btn-end-timer" onclick="endSession('y3')">End</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercise-card pcos-special">
+                <div class="card-image">
+                    <img src="legup.jpeg" alt="Legs-up-the-Wall">
+                </div>
+                <div class="exercise-info">
+                    <div class="badge">Yoga • Pelvic Health </div>
+                    <h4>Legs-up-the-Wall</h4>
+                    <p class="pcos-insight"><strong>Why:</strong>Relieves lower back pain and helps with deep sleep/recovery.</p>
+                </div>
+                <div class="timer-box"><span class="timer-display-small" id="time-y4">00:00</span>
+                    <div class="button-group">
+                        <button class="btn-start-timer" onclick="toggleTimer('y4')">Start</button>
+                        <button class="btn-end-timer" onclick="endSession('y4')">End</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="exercise-card pcos-special">
+                <div class="card-image">
+                    <img src="cat-cow.jpeg" alt="Cat-Cow Flow">
+                </div>
+                <div class="exercise-info">
+                    <div class="badge">Yoga • Cortisol Reduction</div>
+                    <h4>Cat-Cow Flow</h4>
+                    <p class="pcos-insight"><strong>Why:</strong>Improves spinal flexibility and eases menstrual bloating.</p>
+                </div>
+                <div class="timer-box"><span class="timer-display-small" id="time-y5">00:00</span>
+                    <div class="button-group">
+                        <button class="btn-start-timer" onclick="toggleTimer('y5')">Start</button>
+                        <button class="btn-end-timer" onclick="endSession('y5')">End</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+    <script src="yoga-logic.js"></script>
+</body>
+</html>

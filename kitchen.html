@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerHeal | Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="kitchen-theme">
+    <main class="studio-container">
+        <header class="studio-header">
+            <h1>Hormone Mentor</h1>
+            <p>Smart swaps to keep your insulin steady and your skin clear.</p>
+        </header>
+
+        <section class="mentor-section glass">
+            <div class="mentor-input-group">
+                <input type="text" id="craving-input" placeholder="I'm craving a donut....">
+                <button onclick="askMentor()" class="btn-mentor">Ask Mentor</button>
+            </div>
+            <div id="mentor-response"></div>
+        </section>
+
+        <section class="pcos-essentials">
+            <h3>PCOS Kitchen Essentials</h3>
+            <div class="essential-grid">
+               
+                <details class="essential-item">
+                <summary> 🥬 Leafy Greens (Fiber) </summary>
+                <div class="dropdown-content">
+                    <p><strong>Recs:</strong> Spinach, Kale, Arugula.</p>
+                    <p>Eat these at the start of meals to blunt insulin spikes.</p>
+                </div>
+               </details>
+               
+               <details class="essential-item">
+                <summary> 🫐 Berries (Antioxidants)</summary>
+                <div class="dropdown-content">
+                    <p><strong>Recs:</strong> Blueberries, Raspberries, Blackberries.</p>
+                    <p>Low-sugar options that won't trigger androgen production.</p>
+                </div>
+               </details>
+
+               <details class="essential-item">
+                <summary> 🫘 Legumes (Slow Carbs) </summary>
+                <div class="dropdown-content">
+                    <p><strong>Recs:</strong> Chickpeas, Lentils, Black beans.</p>
+                    <p>High protein and fiber content keeps you full longer.</p>
+                </div>
+               </details>
+
+               <details class="essential-item">
+                <summary> 🥜 Healthy Fats (Hormone building blocks)</summary>
+                <div class="dropdown-content">
+                    <p><strong>Recs:</strong> Avocado, Walnuts, Flaxseeds.</p>
+                    <p>Essential for producing progesterone and reducing inflammation.</p>
+                </div>
+               </details>
+
+            </div>
+        </section>
+         <div class="bottom-nav glass">
+            <a href="index.html" >Home</a>
+            <a href="kitchen.html" class="active">Kitchen</a>
+            <a href="flow.html">Flow</a>
+            <a href="studio.html">Studio</a>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

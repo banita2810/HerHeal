@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerHeal | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <img src="logo2.png" alt="HerHeal Logo">
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <section class="quote-container glass">
+            <p id="dailyQuote">"Your body is your sanctuary; listen to its rhythm today."</p>
+        </section>
+
+        <div class="stats-grid">
+            <div class="stat-card glass">
+                <h3>Steps</h3>
+                <div class="progress-container">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                        <circle id="stepCircle" class="ring-bar" cx="60" cy="60" r="50"></circle>
+                    </svg>
+
+                    <div class="step-data">
+                        <span id="stepCount">5,420</span>
+                        <small>Goal: 8k</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-card glass">
+                <h3>Cycle Phase</h3>
+                <div class="phase-badge">Follicular</div>
+                <p class="phase-desc">Energy is rising. Great time for new projects!</p>
+            </div>
+        </div>
+
+        <div class="bottom-nav glass">
+            <a href="index.html" class="active">Home</a>
+            <a href="kitchen.html">Kitchen</a>
+            <a href="flow.html">Flow</a>
+            <a href="studio.html">Studio</a>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

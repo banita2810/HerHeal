@@ -1,0 +1,1131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Inter:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(Women.png) no-repeat 20% center fixed;
+    background-size: cover;
+    background-color: #fdfbf9;
+    margin: 0;
+}
+
+/* login page */
+
+.login-card{
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 50px 40px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow:  0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+   
+}
+
+.greeting{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: #4A4A4A;
+    margin-bottom: 8px;
+}
+
+.tagline{
+    font-size: 0.95rem;
+    color: #000;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+.input-field{
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3 ease; 
+}
+
+.input-field:hover{
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #96a996;
+    cursor: pointer;
+}
+
+.enter-btn{
+    width: 100%;
+    padding: 16px;
+    background: #96a996;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.2s ease;
+    opacity: 0.3 ease;
+}
+
+.enter-btn:hover{
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.footer-links{
+    margin-top: 25px;
+    font-size: 0.85rem;
+}
+
+.footer-links a{
+    color: #6b6b6b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover{
+    color: #96a996;
+}
+
+.dot{
+    margin: 0 10px;
+    color: #ccc;
+}
+
+
+/* Dashboard */
+
+.dashboard-page{
+    /* background: url(dash_back.png) no-repeat center center fixed !important;
+    background-size: cover !important; */
+    margin: 0;
+    padding: 0;
+    
+    background-color: #fdfbf9 ;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-page{
+    background: url(Women.png) no-repeat 20% center fixed;
+    background-size: cover;
+}
+
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.nav-logo img{
+    height: 100px;
+    mix-blend-mode: multiply;
+    
+}
+
+.dashboard-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-container{
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #4A4A4A;
+}
+
+.stat-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-card{
+    padding: 25px;
+    text-align: center;
+}
+
+.stat-card h3{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #7d7d7d;
+    
+}
+
+
+.dashboard-page .main-nav{
+    background: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(5px); */
+}
+.progress-container{
+    position: relative; 
+    display: inline-block;
+}
+
+.progress-ring{
+    transform: rotate(-90deg);
+}
+
+.ring-bg{
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.5);
+    stroke-width:8 ;
+}
+
+.ring-bar{
+    fill: none;
+    stroke: #96a996;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 100;
+    transition: stroke-dashoffset 1s ease;
+}
+
+.step-data{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#stepCount{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.bottom-nav{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.bottom-nav a{
+    text-decoration: none;
+    color: #7d7d7d;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.5 ease-in-out;
+}
+
+.bottom-nav a:hover{
+    transform: translateY(-5px);
+    color: rgb(165, 74, 74);
+}
+.bottom-nav a.active{
+    color: #96a996;
+}
+
+.bottom-nav a.active:hover{
+    transform: translateY(-5px);
+    color: rgb(165, 74, 74);
+}
+
+/* Studio Page */
+
+.studio-main{
+    background-color: #fdfbf9;
+    margin: 0;
+    padding: 100px 20px 120px;
+}
+
+.studio-header h2{
+    font-family: 'Playfair Display',serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 5px;
+
+}
+
+.studio-header p{
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* category grid */
+
+.category-grid{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.cat-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0.2s ease;
+}
+.cat-card:hover{
+    transform: translateY(-5px);
+
+}
+
+.cat-card:active{
+    transform: scale(0.98);
+}
+
+
+.yoga-main { 
+    background: linear-gradient(135deg, #FFB7C5, #ff9aa2);
+ }      
+.meditation-main {
+    background: linear-gradient(135deg, #A88BEB, #8e6ee0); 
+    }
+.pilates-main { 
+    background: linear-gradient(135deg, #5D6D9E, #4a5a8a); 
+}    
+.cardio-main { 
+    background: linear-gradient(135deg, #48C9B0, #36b39a); 
+}     
+
+.cat-info h3{
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.cat-info span{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.play-btn{
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.play-btn:hover{
+    transform: translateY(-5px);
+}
+/* /* exercise  list */
+
+
+.exercise-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.exercise-card.pcos-special{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    border-radius: 28px;
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 700px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.exercise-card.pcos-special:hover{
+    transform: translateY(-5px);
+}
+
+.card-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: contain;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.badge{
+    display: inline-block;
+    background: #f0ebff;
+    color: #8e6ee0;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.exercise-info{
+    flex: 1;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.exercise-info h4{
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.pcos-insight{
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+    background: rgba(253, 251, 249, 0.8);
+    padding: 10px 15px;
+    border-radius: 12px;
+    border-left: 4px solid #ffb7c5;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+}
+
+/* Timer alignment */
+.timer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.timer-display-small{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #8e6ee0;
+}
+
+.btn-start-timer{
+    background: #333;
+    color: white;
+    border:grey;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-end-timer{
+    background: #f0f0f0;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    
+}
+
+.btn-end-timer:hover{
+    background: #ff4d4d;
+    color: white;
+}
+.growth-sanctuary{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    margin: 40px 0;
+    min-height: 140px;  
+    position: relative;
+    z-index: 50;
+    flex-wrap: wrap;          
+}
+.growth-info{
+    flex: 1 1 250px;
+    min-width:0;
+}
+
+.growth-sanctuary h3,
+.growth-sanctuary p{
+    color: #222;
+   margin: 0;
+}
+
+.growth-sanctuary {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+.growth-sanctuary.glass {
+    background: rgba(255,255,255,0.85);
+}
+
+.pot-container{
+    background: #fdfbf9;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+#plant-visual {
+    font-size: 20px; /* This makes the emoji big and visible */
+    display: block;
+}
+
+.bloom {
+    animation: pulse 2s infinite;
+}
+
+.seed-icon{
+    font-size: 3rem; /* Makes the sprout big and visible */
+    transition: all 0.5s ease;
+}
+
+.badge{
+    animation: bloomGlow 2s ease-in-out infinite;
+    display: inline-block;
+}
+@keyframes bloomGlow{
+    0% { transform: scale(1); filter: drop-shadow(0 0 5px #ffb7c5); }
+    50% { transform: scale(1.2); filter: drop-shadow(0 0 20px #ffb7c5); }
+    100% { transform: scale(1); filter: drop-shadow(0 0 5px #ffb7c5); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100%{ transform: scale(1); }
+}
+
+
+/* Yoga Theme */
+.yoga-theme .btn-start-timer{
+   background: #ffb7c5; /* Sakura Pink */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.yoga-theme .btn-start-timer:hover {
+    background: #ff99ac;
+    transform: translateY(-2px);
+}
+
+
+.yoga-theme .pcos-insight {
+    border-left: 4px solid #ffb7c5;
+    background: rgba(255, 240, 245, 0.5);
+}
+
+.yoga-theme .exercise-card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(255, 183, 197, 0.15);
+    border: 1px solid rgba(255, 183, 197, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.yoga-theme .pcos-insight {
+    border-left: 4px solid #ffb7c5;
+    background: #fffafa;
+    padding: 12px;
+    /* border-radius: 0 8px 8px 0; */
+    color: #6d4c41;
+    font-size: 0.9rem;
+}
+
+/* Header style for all pages */
+.studio-header h2 {
+    color: #2d3436;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.studio-header p {
+    color: #636e72;
+    font-size: 1rem;
+}
+
+/* Meditation theme */
+
+.meditation-theme .btn-start-timer{
+    background: #673ab7;
+}
+
+.meditation-theme .pcos-insight{
+    border-left: 4px solid #9575cd;
+}
+
+
+/* Pilates theme */
+.pilates-theme .btn-start-timer {
+    background: #e17055;
+}
+
+.pilates-theme .pcos-insight {
+    border-left: 4px solid #ff7675;
+}
+
+/* cardio theme */
+
+.cardio-theme .btn-start-timer {
+    background: #3cb4e0;
+}
+
+.cardio-theme .pcos-insight {
+    border-left: 4px solid #4bb7d1;
+}
+
+
+.cardio-theme .btn-end-timer {
+   border: 1px solid #4bb7d1;
+   color: black;
+}
+
+.cardio-theme .btn-end-timer:hover{
+    background-color: #4bb7d1;
+    color: white;
+}
+
+/* Kitchen Mentor */
+
+.mentor-search-container{
+    width: 95%;
+    max-width: 600px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(143, 179, 136, 0.2);
+    margin-bottom: 40px;
+}
+.mentor-input-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.mentor-section{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#craving-input{
+    width: 300px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+}
+
+.btn-mentor{
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.mentor-bubble{
+    background: #fff0f5; /* Soft pink tint */
+    padding: 20px;
+    border-radius: 18px;
+    border-left: 5px solid #ffb7c5;
+    margin: 15px 0;
+    text-align: left;
+    animation: slideUp 0.3s ease-out;
+}
+
+#mentor-response{
+    width: 100%;
+    max-width: 550px;
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.logic-text{
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.essential-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.essential-card{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    border: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+}
+
+.essential-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.essential-card .icon{
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.essential-item{
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background 0.3s;
+}
+
+.essential-item[open] {
+    background: #fffafa;
+}
+
+summary{
+    font-weight: 400;
+    list-style: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::after{
+    content: '⏷';
+    font-size: 0.7rem;
+    transition: 0.3s;
+}
+
+details[open] summary::after{
+    transform: rotate(180deg);
+}
+
+.dropdown-content{
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #333 !important;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content p{
+    margin: 5px 0;
+    color: #333 !important;
+}
+
+
+/* Flow Page */
+
+.calendar-container{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Keeps header at the top */
+    min-height: 180px;
+    margin: 10px !important;
+}
+
+.calendar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #5d4037;
+}
+
+.weekdays , .calendar-grid{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    width: 100%;
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.calendar-day{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px auto;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.calendar-day:hover{
+    background: rgba(255, 183, 197, 0.3);
+}
+
+
+/* Periods */
+.periods-logged{
+    background: #ffb7c5 !important;
+    color: white;
+}
+
+.periods-predicted{
+    border: 2px dashed #ffb7c5;
+}
+
+.today{
+    background: #333;
+    color: white;
+}
+
+/* Mood detector */
+.mood-selector{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.mood-selector button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mood-selector button:hover{
+    background: #fdf5f7;
+}
+
+.mood-container{
+    position: relative;
+    padding: 100px;
+}
+
+#mood-suggestion{
+    height: 85px;
+    width: 90%;
+    max-width: 600px;
+    margin: 15px 0;
+    padding: 15px;
+
+    background: #fff0f5;
+    border-radius: 15px;
+    border-left: 5px solid #ffb7c5;
+   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #333;
+
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+    opacity: 0;
+
+
+}
+
+#mood-suggestion.active{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+
+    animation: softPulse 2s infinite;
+
+}
+
+@keyframes softPulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 183, 197, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 183, 197, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 183, 197, 0); }
+}
+.mentor-bubble p{
+    margin: 0;
+}
+
+.studio-container{
+    padding-top: 20px;
+}
+
+.studio-header{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+
+.studio-header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #2d3436;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.studio-header p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #636e72;   /* softer than heading */
+    font-weight: 400;
+}
+
+/* period started btn */
+
+.period-quick-log{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.btn-log{
+    background: #d24964;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px 20px 0 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+}
+
+.phase-badge{
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    color: white;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.phase-menstrual { 
+    background: #ffb7c5; 
+}
+.phase-follicular {
+    background: #95d5b2; 
+}
+.phase-ovulatory { 
+    background: #ffd166; 
+}
+.phase-luteal { 
+    background: #ba68c8; 
+}
+
+.phase-desc{
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsiveness */
+
+@media(max-width:1024px){
+    body{
+        background-position: center;
+    }
+    .dashboard-container{
+        padding: 0 20px;
+    }
+
+    .essential-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 768px){
+    .login-card{
+        max-width: 90%;
+        padding: 30px 20px;
+    }
+
+    .stat-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .exercise-card.pcos-special{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .exercise-info{
+        padding: 0;
+        text-align: center;
+    }
+
+    .timer-box{
+        align-items: center;
+        min-width: auto;
+    }
+    .essential-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-day{
+        height: 35px;
+        width: 35px;
+        font-size: 0.9rem;
+    }
+
+    .studio-header{
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .studio-header h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 480px){
+    .nav-logo img{
+        height: 70px;
+    }
+
+    .greeting{
+        font-size: 1.8rem;
+    }
+
+    .bottom-nav{
+        width: 95%;
+        padding: 10px;
+        bottom: 10px;
+        font-size: 0.8rem;
+    }
+
+    .bottom-nav a{
+        font-size: 0.75rem;
+    }
+
+    .mood-selector button{
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    #craving-input{
+        width: 100%;
+    }
+
+    .mentor-input-group{
+        flex-direction: column;
+    }
+
+    .growth-sanctuary{
+        padding: 20px;
+        max-width: 95%;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerHeal | Flow Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="yoga-theme">
+    <main class="studio-container">
+        <header class="studio-header">
+            <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+            <h1>Your Flow</h1>
+            <p>Track your cycle, predict your phases, and sync your life.</p>
+        </header>
+
+        <section class="calendar-container glass">
+            <div class="calendar-header">
+                <button onclick="changeMonth(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></button>
+                <h2 id="month-display">February 2026</h2>
+                <button onclick="changeMonth(1)"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg></button>
+            </div>
+            <div class="calender-wrapper">
+                <div class="weekdays">
+                    <div>Sunday</div>
+                    <div>Monday</div>
+                    <div>Tuesday</div>
+                    <div>Wednesday</div>
+                    <div>Thursday</div>
+                    <div>Friday</div>
+                    <div>Saturday</div>
+                
+                
+            </div>
+            </div>
+        
+            <div id="calendar-grid" class="calendar-grid">
+            </div>
+        </section>
+
+        <div class="period-quick-log">
+            <button onclick="logPeriodToday()" class="btn-log">
+                Period Starts? <span>Tap me!</span>
+            </button>
+        </div>
+        <section class="mood-container">
+            <h3>How are you feeling today?</h3>
+            <div class="mood-selector">
+                <button onclick="logMood('Crampy')">😫 Cramps</button>
+                <button onclick="logMood('Low Energy')">😴 Tired</button>
+                <button onclick="logMood('Happy')">😊 Energetic</button>
+                <button onclick="logMood('Anxious')">😟 Anxious</button>
+            </div>
+            <div id="mood-suggestion">
+                Select a mood too see a tip!
+            </div>
+        </section>
+        
+         <div class="bottom-nav glass">
+            <a href="index.html">Home</a>
+            <a href="kitchen.html">Kitchen</a>
+            <a href="flow.html" class="active">Flow</a>
+            <a href="studio.html">Studio</a>
+        </div>
+
+    </main>
+<script src="script.js"></script>
+  
+   
+</body>
+</html>
